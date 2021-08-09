@@ -5,21 +5,15 @@ solo van a funcionar para 2 o 3 números. Supongamos que tenemos mas de 3 númer
 Escribir una función max_in_list() que tome una lista de números y devuelva el mas grande.
 """
 
-"""
-
 def max_in_list(list):
 
     print(max(list))
 
 max_in_list([1,2,3,4,5])
 
-"""
-
 
 """
 Escribir una función mas_larga() que tome una lista de palabras y devuelva la mas larga.
-"""
-
 """
 
 def mas_larga(primeraPalabra, segundaPalabra, terceraPalabra):
@@ -38,13 +32,11 @@ def mas_larga(primeraPalabra, segundaPalabra, terceraPalabra):
 
 print(mas_larga("JuanfranciscoMonteroTriviño", "Juanfran", "JuanfranciscoMontero"))
 
-"""
 
 """
 Escribir una función filtrar_palabras() que tome una lista de palabras y un entero n, y devuelva las palabras que tengan mas de n caracteres.
 """
 
-"""
 
 def filtrar_palabras(listaPalabras, numEntero):
 
@@ -57,13 +49,9 @@ def filtrar_palabras(listaPalabras, numEntero):
 
 filtrar_palabras(["Juanfran", "Maria", "Isabel", "Juani"], 8) 
 
-"""
-
 
 """
 Escribir un programa que le diga al usuario que ingrese una cadena. El programa tiene que evaluar la cadena y decir cuantas letras mayúsculas tiene.
-"""
-
 """
 
 cadenaPalabras = input("Introduce su cadena de texto: ")
@@ -81,20 +69,14 @@ for letra in cadenaPalabras:
 
 print("Su cadena tiene ",contador," letras mayúsculas.")
 
-"""
-
 
 """
 Construir un pequeño programa que convierta números binarios en enteros.
 """
 
-"""
-
 numeros = int(input("Introduce un número: "))
 
 print(bin(numeros))
-
-"""
 
 
 """
@@ -105,7 +87,6 @@ Escribir un pequeño programa donde:
 - Se imprime en pantalla.
 """
 
-"""
 
 anioActual = int(input("Introduce el año en el que estamos: "))
 
@@ -127,8 +108,6 @@ for usuario in datosUsuarios:
 
     print(usuario,"cumple:",datosUsuarios[usuario],"años.")
 
-"""
-
 
 """
 Definir una tupla con 10 edades de personas.
@@ -136,7 +115,6 @@ Imprimir la cantidad de personas con edades superiores a 20.
 Puedes variar el ejercicio para que sea el usuario quien ingrese las edades.
 """
 
-"""
 
 listaEdades = []
 
@@ -150,14 +128,12 @@ for i in range(10):
 
 print(tuple(listaEdades))
 
-"""
 
 """
 Definir una lista con un conjunto de nombres, imprimir la cantidad de comienzan con la letra a.
 También se puede hacer elegir al usuario la letra a buscar.  (Un poco mas emocionante)
 """
 
-"""
 
 conjuntoNombres = ["Juanfran", "Maria", "Isabel", "Juani", "Antonio"]
 
@@ -169,15 +145,12 @@ for nombre in conjuntoNombres:
 
        print(nombre, end=" ")
 
-""" 
-
 
 """
 Crear una función contar_vocales(), que reciba una palabra y cuente cuantas letras "a" tiene, cuantas letras "e" tiene y así hasta completar todas las vocales.
 Se puede hacer que el usuario sea quien elija la palabra.
 """
 
-"""
 
 def contarVocales(palabra):
 
@@ -188,14 +161,12 @@ def contarVocales(palabra):
 
 contarVocales("JUANFRAN MONTERO TRIVIÑO")
 
-"""
 
 """
 Escriba una función es_bisiesto() que determine si un año determinado es un año
 bisiesto.Un año bisiesto es divisible por 4, pero no por 100. También es divisible por 400
 """
 
-"""
 
 def esBisiesto(anio):
 
@@ -210,5 +181,3 @@ def esBisiesto(anio):
         print("El año ",anio," NO es bisiesto.")
 
 esBisiesto(2020)
-
-"""

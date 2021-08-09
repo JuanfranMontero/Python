@@ -9,8 +9,6 @@ sí se aplicará un descuento determinado según la tabla que  aparecerá, y ese
 de manera que el programa mostrará un nuevo valor a pagar luego de haber aplicado el descuento.
 """
 
-"""
-
 import random
 
 numElegido = 1
@@ -77,7 +75,7 @@ while numElegido != 0:
     print(" ")
     numElegido = int(input("SI DESEA SALIR PRESIONE 0 O DE LO CONTRARIO PRESIONE OTRO NÚMERO: "))
 
-"""
+
 
 """
 De la galería de productos, el usuario introducirá el código y el número de unidades del producto que desea comprar. 
@@ -86,9 +84,6 @@ Una variante a este ejercicio que lo haría un poco más complejo sería dar la 
 códigos de productos con sus respectivas cantidades, 
 y cuando el usuario desee terminar el cálculo de la factura completa con todas sus compras.
  Te animas??
-
-"""
-
 
 """
 
@@ -156,7 +151,6 @@ while not salir:
         print("El total de su pedido es: ", importeFinal,"€.")
         print("")
 
-"""
 
 
 """
@@ -164,8 +158,6 @@ Este programa muestra primero el listado de categorías de películas y pide al 
 de la película y posterior a ello pide que el usuario introduzca el número de días de atraso, 
 y así se muestra al final el total a pagar.
 """
-
-
 
 salir = False
 
