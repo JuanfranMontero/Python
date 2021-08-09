@@ -165,7 +165,7 @@ de la película y posterior a ello pide que el usuario introduzca el número de 
 y así se muestra al final el total a pagar.
 """
 
-"""
+
 
 salir = False
 
@@ -236,4 +236,3 @@ while not salir:
         print("")
         salir = True
 
-"""
