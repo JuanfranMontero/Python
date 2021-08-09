@@ -25,10 +25,13 @@ Escribir una función mas_larga() que tome una lista de palabras y devuelva la m
 def mas_larga(primeraPalabra, segundaPalabra, terceraPalabra):
 
     if primeraPalabra >= segundaPalabra <= terceraPalabra:
+
         return primeraPalabra
+
     elif segundaPalabra <= segundaPalabra >= terceraPalabra:
 
         return segundaPalabra
+
     else:
 
         return terceraPalabra
