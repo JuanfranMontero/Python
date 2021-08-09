@@ -157,3 +157,83 @@ while not salir:
         print("")
 
 """
+
+
+"""
+Este programa muestra primero el listado de categorías de películas y pide al usuario que introduzca el código de la categoría 
+de la película y posterior a ello pide que el usuario introduzca el número de días de atraso, 
+y así se muestra al final el total a pagar.
+"""
+
+"""
+
+salir = False
+
+while not salir:
+
+    print(" CATEGORIA          PRECIO         CODIGO            RECARGO/DIA DE ATRASO")
+    print("")
+    print(" FAVORITOS           2.50€           1                       0.50€")
+    print("  NUEVOS             3.00€           2                       0.75€")
+    print(" ESTRENOS            3.50€           3                       1.00€")
+    print(" SUPER ESTRENOS      4.00€           4                       1.50€")
+    print("")
+
+    categoriaPelicula = int(input("Introduzca el codigo de la categoria de la pelicula: "))
+    devolucionPelicula = int(input("Introduzca el numero de dias de atraso en la devolución: "))
+    importe = 0
+
+    if categoriaPelicula == 1:
+        
+        if devolucionPelicula > 0:
+
+            importe = 2.50 + 0.50 * devolucionPelicula 
+
+        else:
+
+            importe = 2.50
+    
+    elif categoriaPelicula == 2:
+
+        if devolucionPelicula > 0:
+
+            importe = 3.00 + 0.75 * devolucionPelicula 
+
+        else:
+
+            importe = 3.00
+
+    elif categoriaPelicula == 3:
+
+        if devolucionPelicula > 0:
+
+            importe = 3.50 + 1.00 * devolucionPelicula 
+
+        else:
+
+            importe = 3.50
+
+    elif categoriaPelicula == 4:
+
+        if devolucionPelicula > 0:
+
+            importe = 4.00 + 1.50 * devolucionPelicula 
+
+        else:
+
+            importe = 4.00
+
+    print("")
+    print("EL IMPORTE TOTAL ES DE: ",importe,"€.")
+
+    print("")
+    opcion = input("Si desea continuar pulse (S), si desea salir pulse (N): ")
+    print("")
+
+    if opcion == 'n' or opcion == 'N':
+
+        print("¡Hasta pronto!")
+        print("")
+        salir = True
+
+"""
