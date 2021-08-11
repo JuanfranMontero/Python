@@ -40,3 +40,90 @@ def calculaInteres(cantidadDinero, tasaInteres, anios):
 print("El interés anual se converte en: {0:.2f}".format(calculaInteres(10000,4.5,20)),"€ en un plazo de 20 años")
 
 
+"""
+Imprimir 10 veces la serie de números de 1 a 10.
+"""
+
+for i in range(10):
+
+    for c in range(10):
+
+        print(c+1, end=" ")
+    
+    print(" ")
+
+
+"""
+Para un número N imprimir su tabla de multiplicar.
+"""
+
+def tablaMultiplicar(num):
+
+     for i in range(10):
+
+          print("TABLA DE MÚLTIPLICAR DEL",num)
+          print(num,"x",i+1,":",(i+1)*num)
+
+tablaMultiplicar(2)
+
+
+"""
+Identificar si la suma de los dígitos de un numero es par o impar.
+"""
+
+def identificarParImpar(num1, num2):
+
+     resultado = num1+num2
+
+     if resultado % 2 == 0:
+
+          print("El resultado de la suma es PAR")
+     
+     else:
+
+          print("El resultado de la suma es IMPAR")
+
+
+identificarParImpar(2,-2)
+
+
+"""
+Solicitar un número e imprimir los dígitos pares de este.
+"""
+
+def digitosNumero(num):
+
+
+    for i in range(num):
+
+          if i % 2 == 0:
+
+               print(i, end=" ")
+
+digitosNumero(100)
+
+
+"""
+Los números de las claves de dos cajas fuertes están mezcladas en un
+número entero llamado clave maestra. Determine ambas claves, la primera
+clave se construye con los dígitos impares de la clave maestra y la
+segunda con los pares. Ejemplo: Clave Maestra= 12345, clave1=135,
+clave2=24.
+"""
+
+claveMaestra = input("Introduzca una clave númerica: ")
+clave1 = 0
+clave2 = 0
+
+for i in range(len(claveMaestra)):
+
+    if int(claveMaestra[i]) % 2 == 0:
+
+        clave1 = claveMaestra[i]
+
+    else:
+
+        clave2 = claveMaestra[i]
+
+
+print("Clave 1: ",clave1," || Clave 2: ",clave2)

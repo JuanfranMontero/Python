@@ -21,27 +21,32 @@ y los almacene. Debe pedir: nombre, apellido, sueldo base, afap, fecha de ingres
 y cantidad de hijos.
 """
 
-listaTrabajadores = []
+datosTrabajador = []
+listaTrabajadores = {}
 
 for i in range(2):
 
     nombre = input("Introduce su nombre: ")
-    listaTrabajadores.append(nombre)
+    datosTrabajador.append(nombre)
 
     apellido = input("Introduce su apellido: ")
-    listaTrabajadores.append(apellido)
+    datosTrabajador.append(apellido)
 
     sueldoBase = int(input("Introduce su sueldo base: "))
-    listaTrabajadores.append(sueldoBase)
+    datosTrabajador.append(sueldoBase)
 
     organismo = input("Introduce a que organismo perteneces (AFPs o FONASA): ")
     organismo = organismo.lower()
-    listaTrabajadores.append(organismo)
+    datosTrabajador.append(organismo)
 
     fechaIngreso = input("Introduce su fecha de ingreso (DD/MM/AAAA): ")
-    listaTrabajadores.append(fechaIngreso)
+    datosTrabajador.append(fechaIngreso)
 
     cantidadHijos = int(input("Introduce la cantidad de hijos: "))
-    listaTrabajadores.append(cantidadHijos)
+    datosTrabajador.append(cantidadHijos)
+
+    listaTrabajadores = datosTrabajador
 
     print(" ")
+
+
