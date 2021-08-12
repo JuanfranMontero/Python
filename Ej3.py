@@ -112,18 +112,18 @@ clave2=24.
 """
 
 claveMaestra = input("Introduzca una clave númerica: ")
-clave1 = 0
-clave2 = 0
+clave1 = ""
+clave2 = ""
 
 for i in range(len(claveMaestra)):
 
     if int(claveMaestra[i]) % 2 == 0:
 
-        clave1 = claveMaestra[i]
+        clave1 += claveMaestra[i]
 
     else:
 
-        clave2 = claveMaestra[i]
+        clave2 += claveMaestra[i]
 
 
 print("Clave 1: ",clave1," || Clave 2: ",clave2)
