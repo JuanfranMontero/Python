@@ -56,3 +56,51 @@ lista = [1,2,3,4,5]
 eliminarElementosLista(lista)
 
 
+"""
+Escribe una función "ordenada" que tome una lista como parámetro y devuelva True si la lista está ordenada en orden ascendente
+ y devuelva False en caso contrario.
+Por ejemplo, ordenada([1, 2, 3]) retorna True y ordenada([b, a]) retorna False.
+"""
+
+def ordenada(listaNumeros):
+
+    for i in range(len(listaNumeros)):
+
+        if i < len(listaNumeros)-1:
+
+            if listaNumeros[i] > listaNumeros[i+1]:
+
+                return False
+        
+        elif i == len(listaNumeros):
+
+            if listaNumeros[i] < listaNumeros[i-1]:
+
+                return False
+
+    return True
+
+
+lista = [1,2,3,4,5]
+
+
+print(ordenada(lista))
+
+
+"""
+Escribe una función que lea las palabras de un archivo de texto (texto.txt)
+ y construya una lista donde cada palabra es un elemento de la lista.
+"""
+
+fichero =  open("texto.txt", "r")
+
+datosFicheros = []
+
+for words in fichero:
+
+    datosFicheros.append(words.split())
+
+fichero.close()
+
+print(datosFicheros)
+
