@@ -1,52 +1,58 @@
 
 """
-Una PyME, tiene la siguiente estructura de pagos para sus 10 empleados: 
-
-    -Un sueldo base
-
-    -Una bonificación del 1% del sueldo base, por cada mes trabajado
-
-    -Una asignación familiar del 5% del sueldo base, por cada hijo
-
-La suma de los tres valores anteriores, conforman la “base imponible”.
-Todos los empleados están en FONASA, así que deben cotizar el 7% de la base imponible en salud. 
-Los empleados están en una de dos: 
-    AFPs, la primera cobra (entre imposición y otros gastos) el 12 % de la base imponible, mientras que la segunda cobra el 11.4%
-
+Escriba una función que tome una lista de números y devuelva la suma acumulada, es decir, 
+una nueva lista donde el primer elemento es el mismo, el segundo elemento es la suma del primero con el segundo, 
+el tercer elemento es la suma del resultado anterior con el siguiente elemento y así sucesivamente. Por ejemplo, 
+la suma acumulada de [1,2,3] es [1, 3, 6].
 """
 
+def sumaListas(listaNumeros):
+
+    listaFinal = []
+
+    for i in range(len(listaNumeros)):
+
+        if i == 0:
+
+            listaFinal.append(listaNumeros[0])
+
+        elif i != 0:
+
+            listaFinal.append(listaFinal[i-1] + listaNumeros[i])
+
+            
+
+        
+    print(listaFinal)
+
+
+listaNumeros = [1,2,3,4,5]
+
+sumaListas(listaNumeros)
+
+
+
 """
-a) Pida el ingreso de datos de los 10 empleados
-y los almacene. Debe pedir: nombre, apellido, sueldo base, afap, fecha de ingreso
-y cantidad de hijos.
+Escribe una función llamada "elimina" que tome una lista y elimine el primer y último elemento de la lista
+ y cree una nueva lista con los elementos que no fueron eliminados.
+Luego escribe una función que se llame "media" que tome una lista y 
+devuelva una nueva lista que contenga todos los elementos de la lista anterior menos el primero y el último.
 """
 
-datosTrabajador = []
-listaTrabajadores = {}
 
-for i in range(2):
+def eliminarElementosLista(listaNumeros):
 
-    nombre = input("Introduce su nombre: ")
-    datosTrabajador.append(nombre)
+    listaNumeros.pop(0)
 
-    apellido = input("Introduce su apellido: ")
-    datosTrabajador.append(apellido)
+    ultimoElemento = len(listaNumeros)
+    listaNumeros.pop(ultimoElemento-1)
 
-    sueldoBase = int(input("Introduce su sueldo base: "))
-    datosTrabajador.append(sueldoBase)
+    listaFinal = listaNumeros
+    
+    print(listaFinal)
 
-    organismo = input("Introduce a que organismo perteneces (AFPs o FONASA): ")
-    organismo = organismo.lower()
-    datosTrabajador.append(organismo)
+lista = [1,2,3,4,5]
 
-    fechaIngreso = input("Introduce su fecha de ingreso (DD/MM/AAAA): ")
-    datosTrabajador.append(fechaIngreso)
-
-    cantidadHijos = int(input("Introduce la cantidad de hijos: "))
-    datosTrabajador.append(cantidadHijos)
-
-    listaTrabajadores = datosTrabajador
-
-    print(" ")
+eliminarElementosLista(lista)
 
 
