@@ -104,3 +104,24 @@ fichero.close()
 
 print(datosFicheros)
 
+
+"""
+Escribe una función llamada "inversa" que busque todas las palabras inversas de una lista.
+Ejemplo de palabras inversas: radar, oro, rajar, rallar, salas, somos, etc...
+"""
+
+
+def inversa(palabra):
+
+    if palabra == ''.join(reversed(palabra)):
+
+        return True
+    
+    else:
+
+        return False
+
+
+texto = input("Introduce la palabra para sabre si es palíndromo: ")
+
+print(inversa(texto))

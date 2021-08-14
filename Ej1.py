@@ -141,9 +141,7 @@ def es_palindromo(palabra):
 
 texto = input("Introduce la palabra para sabre si es palíndromo: ")
 
-resultadoPali = es_palindromo(texto)
-
-print(resultadoPali)
+print(es_palindromo(texto))
 
 
 """
