@@ -82,3 +82,69 @@ if nombreFruta in precioFruta.keys():
 else:
 
     print("Actualmente no tenemos esa fruta disponible, Lo siento!")
+
+
+
+"""
+Escribir un programa que pregunte una fecha en formato dd/mm/aaaa y muestre por pantalla la misma fecha en formato dd de <mes> de aaaa donde <mes> es el nombre del mes.
+"""
+
+fecha = input("Introduce una fecha (dd/mm/aaaa): ")
+
+
+fecha =  fecha.split("/")
+
+mes = ""
+
+if fecha[1] == '1' or fecha[1] == '01':
+    
+    mes = "Enero"
+
+elif fecha[1] == '2' or fecha[1] == '02':
+    
+    mes = "Febrero"
+
+elif fecha[1] == '3' or fecha[1] == '03':
+    
+    mes = "Marzo"
+
+elif fecha[1] == '4' or fecha[1] == '04':
+    
+    mes = "Abril"
+
+elif fecha[1] == '5' or fecha[1] == '05':
+    
+    mes = "Mayo"
+
+elif fecha[1] == '6' or fecha[1] == '06':
+    
+    mes = "Junio"
+
+elif fecha[1] == '7' or fecha[1] == '07':
+    
+    mes = "Julio"
+
+elif fecha[1] == '8' or fecha[1] == '08':
+    
+    mes = "Agosto"
+
+elif fecha[1] == '9' or fecha[1] == '09':
+    
+    mes = "Septiembre"
+
+elif fecha[1] == '10':
+    
+    mes = "Octubre"
+
+elif fecha[1] == '11':
+    
+    mes = "Noviembre"
+
+
+elif fecha[1] == '12':
+    
+    mes = "Dicimbre"
+
+
+print("{} de {} de {}.".format(fecha[0], mes, fecha[2]))
+
