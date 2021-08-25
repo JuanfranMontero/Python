@@ -148,3 +148,36 @@ elif fecha[1] == '12':
 
 print("{} de {} de {}.".format(fecha[0], mes, fecha[2]))
 
+
+
+""""
+Escribir un programa que cree un diccionario vacío y lo vaya llenado con información sobre una persona
+ (por ejemplo nombre, edad, sexo, teléfono, correo electrónico, etc.) que se le pida al usuario. 
+ Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.
+"""
+
+datosUsuario = {}
+
+nombre = input("Introduce su nombre: ")
+datosUsuario["Nombre"] = nombre
+print(datosUsuario)
+print("")
+
+edad = int(input("Introduce su edad: "))
+datosUsuario["Edad"] = edad
+print(datosUsuario)
+print("")
+
+sexo = input("Introduce su sexo: ")
+datosUsuario["Sexo"] = sexo
+print(datosUsuario)
+print("")
+
+telefono = int(input("Introduce su telefono: "))
+datosUsuario["Telefono"] = telefono
+print(datosUsuario)
+print("")
+
+correoElectronico = input("Introduce su Correo Electronico: ")
+datosUsuario["Correo Electronico"] = correoElectronico
+print(datosUsuario)
