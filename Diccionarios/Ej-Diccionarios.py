@@ -208,8 +208,21 @@ while not salir:
         palabra = palabra.split(':')
         diccionarios_ES_EN[palabra[0]] = palabra[1]
 
-
-print(diccionarios_ES_EN)
-
 frase = input("Introduce una frase en español para ser traducida: ")
+
+fraseTraducida = ""
+
+frase = frase.split(' ')
+
+
+for i in range(len(frase)):
+
+    if frase[i] in diccionarios_ES_EN:
+
+        print(diccionarios_ES_EN.get(i), end=" ")
+
+    else:
+
+        print(frase[i], end=" ")
+
 
