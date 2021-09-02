@@ -181,3 +181,35 @@ print("")
 correoElectronico = input("Introduce su Correo Electronico: ")
 datosUsuario["Correo Electronico"] = correoElectronico
 print(datosUsuario)
+
+
+"""
+Escribir un programa que cree un diccionario de traducción español-inglés.
+ El usuario introducirá las palabras en español e inglés separadas por dos puntos,
+  y cada par <palabra>:<traducción> separados por comas. 
+  El programa debe crear un diccionario con las palabras y sus traducciones. Después pedirá una frase en español 
+  y utilizará el diccionario para traducirla palabra a palabra. Si una palabra no está en el diccionario debe dejarla sin traducir.
+"""
+
+diccionarios_ES_EN = {}
+
+salir = False
+
+while not salir:
+
+    palabra = input("Introduce una palabra con el siguiente formato (palabra:traduccion) para salir pulse 0: ")
+
+    if palabra == '0':
+
+        salir = True
+
+    else:
+
+        palabra = palabra.split(':')
+        diccionarios_ES_EN[palabra[0]] = palabra[1]
+
+
+print(diccionarios_ES_EN)
+
+frase = input("Introduce una frase en español para ser traducida: ")
+
